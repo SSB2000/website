@@ -17,7 +17,12 @@
 	<link rel="stylesheet" href="styles.css">
 	<!-- Google fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,700;1,300&display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
@@ -40,14 +45,18 @@
 	</header>
 	<!-- Introduction/Home -->
 	<section id="intro" class="intro">
-		<div class="moon_div">
-			<div class="moon">
-				<div class="moon_blur">
+		<div class="moon_sun_div">
+			<button id="mode-toggle" class="mode-toggle" arial-label="Dark/Light mode toggle">
+				<div id="moon-sun" class="moon">
+					<div id="moon-sun_blur" class="moon_blur">
+					</div>
 				</div>
-			</div>
+			</button>
 		</div>
-		<h1 class="typing section_title section_title-intro"></h1>
-		<h2 class="section_subtitle-intro">I'm <strong>Shubham Singh Bohra</strong></h2>
+		<div class="intro_info">
+			<h1 class="typing section_title section_title-intro"></h1>
+			<h2 class="section_subtitle-intro">I am<strong> Shubham</strong></h2>
+		</div>
 	</section>
 
 	<!-- My Services -->
@@ -56,26 +65,25 @@
 			What I do
 		</h2>
 		<div class="services">
-			<div class="service">
-				<h3>FullStack Web Development</h3>
-				<p>I am a Flask Full stack WebDeveloper. Proficient in HTML, CSS3, JavaScript, bootstrap etc for front
-					end. I work with Flask for backend Web Development. Have worked with MySql and Postgres in my
-					personal project and college course work.
+			<div class="service service_fswd">
+				<h3><strong>FullStack Web Development</strong></h3>
+				<p>I work with HTML, CSS, JavaScript, Bootstrap. I am Proficient with Flask.
+					Worked in several project developed with Flask Framework.
 				</p>
 			</div>
 			<!--service-->
 
 			<div class="service">
-				<h3>Software Development</h3>
-				<p>I am software Developer also. Proficient in C, C++ and python. I have Developed my several projects
-					in said languages
-					in diffrent feild like Game Development, Web Apps, Windows Desktop Apps and worked extensively with
-					Datastructure and Algorithms.
-				</p>
+				<h3>
+					<strong>Software Development</strong>
+				</h3>
+				<p>I am Software Developed. Have experience in C, C<samll>++</samll>, Python with extensive knowledge of
+					Data Structure and Algorithms.</p>
 			</div>
 			<!--service-->
 		</div>
 		<!--services-->
+		<!--illustrations-->
 	</section>
 
 	<!-- Work -->
@@ -84,44 +92,110 @@
 			My Work
 		</h2>
 		<div class="portfolio">
-			<div class="portfolio_item portfolio_item_1"><a href="#" class="">
-					<img src="static/Amprdono.png" alt="" class="portfolio_img">
-				</a></div>
+			<div class="content">
+				<a href="#" class="">
+					<div class="content-overlay"></div>
+					<img src="static/Amprdono.png" alt="Amprdono Website Image" class="portfolio_img content-image">
+					<div class="content-details fadeIn-bottom">
+						<h4 class="content-title">Amprdono.games</h4>
+						<p class="content-text">A Social Media site complete Developed my me.</p>
+					</div>
+				</a>
+			</div>
 			<!--portfolio_item-->
-			<div class="portfolio_item portfolio_item_2"><a href="#" class="">
-					<img src="static/LikeDislike.png" alt="" class="portfolio_img">
-				</a></div>
+			<div class="content">
+				<a href="http://amprdono.me/Password-Generator/" target="_blank" class="">
+					<div class="content-overlay"></div>
+					<img src="static/Random_password_generator .png" alt="Website to Generate Password."
+						class="portfolio_img content-image">
+					<div class="content-details fadeIn-bottom">
+						<h4 class="content-title">Password Generator Website.</h4>
+						<p class="content-text">A website to generate (12 - 32) character long Password.</p>
+					</div>
+				</a>
+			</div>
 			<!--portfolio_item-->
-			<div class="portfolio_item portfolio_item_3"><a href="#" class="">
-					<img src="static/Technical_Documentation.png" alt="" class="portfolio_img">
-				</a></div>
+			<div class="content">
+				<a href="https://codepen.io/ssb2000/pen/rNjebmN" target="_blank" class="">
+					<div class="content-overlay"></div>
+					<img src="static/Technical_Documentation.png" alt="Technical Documentation Website Image"
+						class="portfolio_img content-image">
+					<div class="content-details fadeIn-bottom">
+						<h4 class="content-title">Documentation Website</h4>
+						<p class="content-text">A website for JavaScript Technical documentation.</p>
+					</div>
+				</a>
+			</div>
 			<!--portfolio_item-->
-			<div class="portfolio_item portfolio_item_4"><a href="#" class="">
-					<img src="static/Tribute.png" alt="" class="portfolio_img">
-				</a></div>
+			<div class="content">
+				<a href="http://amprdono.me/sudoku-6-6/" target="_blank" class="">
+					<div class="content-overlay"></div>
+					<img src="static/Sudoku.png" alt="Sudoku Game" class="portfolio_img content-image">
+					<div class="content-details fadeIn-bottom">
+						<h4 class="content-title">Sudoku Game
+						</h4>
+						<p class="content-text">A 6 * 6 Sudoku Game Website.</p>
+					</div>
+				</a>
+			</div>
 			<!--portfolio_item-->
-			<div class="portfolio_item portfolio_item_5"><a href="#" class="portfoli_item">
-					<img src="static/pingpong.png" alt="" class="portfolio_img">
-				</a></div>
+			<div class="content">
+				<a href="#" class="">
+					<div class="content-overlay"></div>
+					<img src="static/pingpong.png" alt="Ping-Pong Game Image" class="portfolio_img content-image">
+					<div class="content-details fadeIn-bottom">
+						<h4 class="content-title">Ping-Pong</h4>
+						<p class="content-text">A Desktop Ping-Pong gamg with a twist.</p>
+					</div>
+				</a>
+			</div>
 			<!--portfolio_item-->
-			<div class="portfolio_item portfolio_item_6"><a href="#" class="">
-					<img src="static/Discolight.png" alt="" class="portfolio_img">
-				</a></div>
+			<div class="content">
+				<a href="https://codepen.io/ssb2000/pen/rNjWNbK" target="_blank" class="">
+					<div class="content-overlay"></div>
+					<img src="static/Tribute.png" alt="Tribute Page Website Image" class="portfolio_img content-image">
+					<div class="content-details fadeIn-bottom">
+						<h4 class="content-title">Tribute WebPage</h4>
+						<p class="content-text">A webPage for Tribute to Dr. Norman Borlaug.</p>
+					</div>
+				</a>
+			</div>
+			<!--portfolio_item-->
+			<div class="content">
+				<a href="#" class="">
+					<div class="content-overlay"></div>
+					<img src="static/Discolight.png" alt="Disco Light Image" class="portfolio_img content-image">
+					<div class="content-details fadeIn-bottom">
+						<h4 class="content-title">DiscoLights
+						</h4>
+						<p class="content-text">A Desktop Application simulating infinite blinking disco lights..</p>
+					</div>
+				</a>
+			</div>
+			<!--portfolio_item-->
+			<div class="content">
+				<a href="#" class="">
+					<div class="content-overlay"></div>
+					<img src="static/LikeDislike.png" alt="Website Image" class="portfolio_img content-image">
+					<div class="content-details fadeIn-bottom">
+						<h4 class="content-title">Entertainment Review</h4>
+						<p class="content-text">A website for giving review to anime, moview, shows etc.</p>
+					</div>
+				</a>
+			</div>
 			<!--portfolio_item-->
 		</div>
 		<!--portfolio-->
 	</section>
-
-
 	<!-- about me -->
 	<section class="about" id="about">
 		<h2 class="section_title section_title-about">About me</h2>
 		<p class="">Hello, I am Shubham Singh Bohra. A graduate student finishing
 			my computer science graduate degree in
 			August 2022. I have worked with several programming languages in my college journey. I hope to do well in
-			this incredible industry in the future.
-			<br>
-			My interest in computers doesn't begins from very early age but I was always facinated with it. I was more
+			this incredible industry in the future.</p>
+		<br>
+		<p>My interest in computers doesn't begins from very early age but I was always facinated with it. I was more
 			of a Maths and Physics guy. But I was always facinated by internet from childhood and thats why I think, my
 			interest in Web and Web
 			Technology in slightly more than say programming.
@@ -131,12 +205,18 @@
 	<!-- footer -->
 	<footer id="contact" class="contact">
 		<ul class="social_list">
-			<li class="social_list-item a"><a href="#" class="social_list-link"><i class="fab fa-github"></i></a></li>
-			<li class="social_list-item b"><a href="#" class="social_list-link"><i class="fab fa-linkedin"></i></a></li>
-			<li class="social_list-item c"><a href="#" class="social_list-link"><i class="fas fa-envelope"></i></a></li>
+			<li class="social_list-item a"><a href="https://github.com/SSB2000" target="_blank"
+					class="social_list-link grow"><i class="fab fa-github grow"></i></a>
+			</li>
+			<li class="social_list-item b"><a href="https://www.linkedin.com/in/shubhamsbohra/" target="_blank"
+					class="social_list-link grow"><i class="fab fa-linkedin grow "></i></a>
+			</li>
+			<li class="social_list-item c"><a href="mailto:mshubhambohra@gmail.com" target="_blank"
+					class="social_list-link grow"><i class="fas fa-envelope grow"></i></a>
+			</li>
 		</ul>
-		<a href="" class="footer_link">mshubhambohra@gmail.com</a>
-		<a href="" class="footer_link">shubhambohra292@gmail.com</a>
+		<a href="mailto:mshubhambohra@gmail.com" target="_blank" class="footer_link">mshubhambohra@gmail.com</a>
+		<a href="mailto:shubhambohra292@gmail.com" target="_blank" class="footer_link">shubhambohra292@gmail.com</a>
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
