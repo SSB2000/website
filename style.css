@@ -1,0 +1,140 @@
+.intro {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact {
+  height: 100vh;
+}
+
+.contact {
+  text-align: center;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  max-width: 95%;
+  padding: 2em;
+  background-color: #bebebe;
+  color: black;
+  -webkit-box-shadow: 3px 4px #414141;
+          box-shadow: 3px 4px #414141;
+}
+
+.contact h1 {
+  width: 100px;
+  padding-bottom: 0.105em;
+  margin: 0.5em auto;
+  border-bottom: 1px #5b1010 solid;
+}
+
+.contact .error,
+.contact .valid {
+  margin: 0.3em auto;
+  display: none;
+  font-size: 0.6em;
+  border: 1px solid #160000;
+  border-radius: 5px;
+  padding: 0.3em;
+  width: 95%;
+}
+
+.contact .error span,
+.contact .valid span {
+  font-size: 1em;
+  display: block;
+}
+
+.form_fieldset {
+  border: none !important;
+  margin-bottom: 2em;
+  font-size: 1em;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  text-align: left;
+}
+
+.form_fieldset .fieldset_input {
+  width: 100%;
+  height: 100%;
+  color: #595f6e;
+  padding-top: 15px;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  border-radius: 25px;
+  background-color: #bebebe;
+}
+
+.form_fieldset .fieldset_input:focus + .fieldset_label .input_name,
+.form_fieldset .fieldset_input:valid + .fieldset_label .input_name {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 15px;
+  color: #1f0000;
+}
+
+.form_fieldset .fieldset_input:focus + .fieldset_label::after,
+.form_fieldset .fieldset_input:valid + .fieldset_label::after {
+  -webkit-transform: translateX(0.1%);
+          transform: translateX(0.1%);
+}
+
+.form_fieldset .fieldset_label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  color: black;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  color: black;
+  padding-left: 10px;
+}
+
+.form_fieldset .fieldset_label::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #500000;
+  left: 0;
+  bottom: -1px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: trasform 0.3s ease;
+  transition: trasform 0.3s ease;
+}
+
+.form_fieldset .fieldset_label .input_name {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.form_button {
+  padding: 0.3em 1em;
+  margin-bottom: 0.3em;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background-color: #0d0d1d;
+  color: darkgray;
+}
+
+.form_button:hover {
+  background-color: black;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
